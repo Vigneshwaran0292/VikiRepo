@@ -1,14 +1,14 @@
-pipeline {
+pipeline{
     agent any
-    stages {
-        stage('version') {
-            steps {
-                bat '"C:\Windows\System32\cmd.exe" /c python --version'
+    stages{
+        stage('version'){
+            steps{
+                bat ' "c:\\Windows\\System32\\cmd.exe" /c python --version'
             }
         }
-        stage('hello') {
-            steps {
-                bat '"C:\Windows\System32\cmd.exe" python demo.py'
+        stage('hello'){
+            steps{
+                bat ' "c:\\Windows\\System32\\cmd.exe" /c python demo.py'
             }
         }
     }
