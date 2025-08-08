@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('version') {
             steps {
-                bat '"C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe" --version'
+                bat '"C:\Users\ASUS\viki\VikiRepo" --version'
             }
         }
         stage('hello') {
             steps {
-                bat '"C:\\Users\\ASUS\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe" demo.py'
+                bat '"C:\Users\ASUS\viki\VikiRepo" demo.py'
             }
         }
     }
